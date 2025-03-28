@@ -6,9 +6,9 @@
     "C_Cpp.intelliSenseEngine": "disabled",
     "C_Cpp.formatting": "disabled",
     "C_Cpp.codeAnalysis.clangTidy.enabled": true,
-    "C_Cpp.codeAnalysis.clangTidy.path": "C:/Tools/msys64/ucrt64/bin/clang-tidy.exe",
-    "clangd.path": "C:/Tools/msys64/ucrt64/bin/clangd.exe",
+    "C_Cpp.codeAnalysis.clangTidy.path": "/usr/bin/clang-tidy",
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++",
+    "clangd.path": "usr/bin/clangd",
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
-    "C_Cpp.default.compilerPath": "c:/Tools/msys64/ucrt64/bin/clang++.exe",
 }

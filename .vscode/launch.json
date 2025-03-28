@@ -5,13 +5,13 @@
             "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/main",
+            "program": "${workspaceFolder}/out/bin/debug/main",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "lldb",
+            "MIMode": "gdb",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -19,8 +19,8 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "build",
-            "miDebuggerPath": "/usr/bin/lldb",
+            "preLaunchTask": "build debug",
+            "miDebuggerPath": "/usr/bin/gdb",
             "logging": {
                 "trace": true,
                 "traceResponse": true,
