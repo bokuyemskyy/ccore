@@ -1,0 +1,52 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 20,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "default",
+            "displayName": "Default Multi-Config",
+            "description": "Multi-config build with Ninja for Debug and Release",
+            "generator": "Ninja Multi-Config",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES",
+                "PROJECT_NAME": "kaban",
+                "BINARY_NAME": "kaban",
+                "LIBRARY_NAME": "kaban_lib",
+                "LIBS": "OpenGL::GL glfw imgui::imgui rt pthread dl",
+                "CMAKE_C_COMPILER": "clang",
+                "CMAKE_CXX_COMPILER": "clang++",
+                "CMAKE_MAKE_PROGRAM": "ninja",
+                "CMAKE_CONFIGURATION_TYPES": "debug;release",
+                "CMAKE_CXX_STANDARD": "23",
+                "CMAKE_CXX_STANDARD_REQUIRED": "ON",
+                "CMAKE_PROJECT_DIRECTORY": "${sourceDir}/project",
+                "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/out/bin",
+                "CMAKE_LIBRARY_OUTPUT_DIRECTORY": "${sourceDir}/out/lib",
+                "CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG": "${sourceDir}/out/bin/debug",
+                "CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE": "${sourceDir}/out/bin/release",
+                "CMAKE_PREFIX_PATH": "${sourceDir}/vcpkg_installed/x64-linux/share",
+                "VCPKG_INCLUDE_DIR": "${sourceDir}/vcpkg_installed/x64-linux/include/",
+                "CMAKE_MODULE_PATH": "${sourceDir}/vcpkg_installed/x64-linux/share/stb",
+                "Stb_INCLUDE_DIR": "${sourceDir}/vcpkg_installed/x64-linux/include/",
+                "OpenGL_GL_PREFERENCE": "GLVND"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "debug",
+            "configurePreset": "default",
+            "configuration": "Debug"
+        },
+        {
+            "name": "release",
+            "configurePreset": "default",
+            "configuration": "Release"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "cmake.configureOnOpen": true,
+    "cmake.generator": "Ninja",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.formatting": "disabled",
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.codeAnalysis.clangTidy.path": "C:/Tools/msys64/ucrt64/bin/clang-tidy.exe",
+    "clangd.path": "C:/Tools/msys64/ucrt64/bin/clangd.exe",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "C_Cpp.default.compilerPath": "c:/Tools/msys64/ucrt64/bin/clang++.exe",
+}
