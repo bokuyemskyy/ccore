@@ -16,12 +16,14 @@ In the future, it aims to streamline the development process to be easily adapte
 - **Debugger**: Preconfigured GDB debugging setup for easier troubleshooting.
 
 ## Some details
-### Project structure in a nutshell
+### Overview of the project structure
 - /.devcontainer: VSCode devcontainer configuration
 - /.vscode: VSCode debugging, linting and editor configurations
-- /docker: Dockerfiles for both development and release containers
 - /project: your project itself
 - /vcpkg_installed: VCPKG folder for your dependencies
+- Dockerfiles for both development and release containers
+- clang configuration files
+- vcpkg manifest file
 
 ### Dependency editing
 To add a VCPKG dependency to the project - modify 'vcpkg.json' mafinest file, adding a new line to "dependencies" list. Then, modify the corresponding CMakeLists.txt to include the library.
